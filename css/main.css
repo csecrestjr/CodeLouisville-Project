@@ -1,0 +1,376 @@
+/**********************************
+API
+***********************************/
+
+<style type="text/css">
+    #DivMap
+    {
+        border: 1px solid Black;
+        width: 500px;
+        height: 400px;
+        margin-top: 30px;
+        margin-left: 32%;
+    }
+</style>
+
+/**********************************
+GENERAL
+***********************************/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h3 {
+  margin: 0 0 1em 0;
+}
+
+
+
+/**********************************
+HEADING
+***********************************/
+
+header {
+  float: left;
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%;
+}
+
+#logo {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Changa One', sans-serif;
+  margin: 15px 0;
+  font-size: 1.75em;
+  font-weight: normal;
+  line-height: 0.8em;
+}
+
+h2 {
+  font-size: 0.75em;
+  margin: -5px 0 0;
+  font-weight: normal;
+}
+
+
+
+/**********************************
+NAVIGATION
+***********************************/
+
+nav {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-weight: 800;
+  padding: 15px 10px;
+}
+
+
+
+/**********************************
+FOOTER
+***********************************/
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  padding-top: 50px;
+  color: #ccc;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+
+
+/**********************************
+PAGE: PORTFOLIO
+***********************************/
+
+#gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#gallery li {
+  float: left;
+  width: 45%;
+  margin: 2.5%;
+  background-color: #f5f5f5;
+  color: #bdc3c7;
+}
+
+#gallery li a p {
+  margin: 0;
+  padding: 5%;
+  font-size: 0.75em;
+  color: #bdc3c7
+}
+
+
+
+/**********************************
+PAGE: ABOUT
+***********************************/
+
+.profile-photo {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 100%;
+}
+
+
+
+/**********************************
+PAGE: CONTACT
+***********************************/
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+.contact-info li.phone a {
+  background-image: url('../assets/phone.svg');
+}
+
+.contact-info li.mail a {
+  background-image: url('../assets/mail.svg');
+}
+
+.contact-info li.twitter a {
+  background-image: url('../assets/twitter.svg');
+}
+
+
+
+/**********************************
+COLORS
+***********************************/
+
+/* site body */
+body {
+  background-color: #fff;
+  color: #999;
+}
+
+/* green header */
+header {
+  background: #6ab47b;
+  border-color: #599a68;
+}
+
+/* nav background on mobile */
+nav {
+  background: #599a68;
+}
+
+/* logo text */
+h1, h2 {
+  color: #fff;
+}
+
+/* links */
+a {
+  color: #6ab47b;
+}
+
+/* nav link */
+nav a, nav a:visited {
+  color: #fff;
+}
+
+/* selected nav link */
+nav a.selected, nav a:hover {
+  color: #32673f;
+}
+
+@import url('custom-popup.css');
+
+/**********************************
+TO DO LIST
+***********************************/
+
+body {
+  color: #2d3339;
+  font-family: "Varela Round";
+  text-align: center;
+  background: #edeff0;
+  font-size: 16px; }
+
+a {
+  color: #3f8abf;
+  text-decoration: none; }
+  a:hover {
+    color: #65a1cc; }
+
+.list {
+  background: #fff;
+  width: 80%;
+  min-width: 500px;
+  margin: 80px auto 0;
+  border-top: 40px solid #5a6772;
+  text-align: left; }
+  .list .item {
+    border-bottom: 2px solid #edeff0;
+    padding: 17px 0 18px 17px; }
+    .list .item label {
+      padding-left: 5px;
+      cursor: pointer; }
+    .list .item .editing-label {
+      margin-left: 5px;
+      font-family: "Varela Round";
+      border-radius: 2px;
+      border: 2px solid #a7b9c4;
+      font-size: 16px;
+      padding: 15px 0 15px 10px;
+      width: 60%; }
+    .list .item .actions {
+      float: right;
+      margin-right: 20px; }
+      .list .item .actions .delete {
+        color: #ed5a5a;
+        margin-left: 10px; }
+        .list .item .actions .delete:hover {
+          color: #f28888; }
+    .list .item.editing-item .actions {
+      margin-top: 17px; }
+  .list .edited label:after {
+    content: " edited";
+    text-transform: uppercase;
+    color: #a7b9c4;
+    font-size: 14px;
+    padding-left: 5px; }
+  .list .completed label {
+    color: #a7b9c4;
+    text-decoration: line-through; }
+  .list .add {
+    padding: 25px 0 27px 25px; }
+
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(checkbox-empty.svg) left top no-repeat;
+    cursor:pointer;
+}
+input[type="checkbox"]:checked + span {
+    background:url(checkbox-filled.svg) left top no-repeat;
+}
+Status API Training Shop Blog About
+
+/*********** checkbox-empty.svg ***********/
+
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 19 19" style="enable-background:new 0 0 19 19;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#A7B9C4;}
+</style>
+<path class="st0" d="M17,2v15H2V2H17 M17,0H2C0.9,0,0,0.9,0,2v15c0,1.1,0.9,2,2,2h15c1.1,0,2-0.9,2-2V2C19,0.9,18.1,0,17,0L17,0z"/>
+</svg>
+
+
+/*********** checkbox-filled.svg ***********/
+
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 19 19" style="enable-background:new 0 0 19 19;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#A7B9C4;}
+	.st1{fill:#5A6772;}
+</style>
+<path class="st0" d="M17,2v15H2V2H17 M17,0H2C0.9,0,0,0.9,0,2v15c0,1.1,0.9,2,2,2h15c1.1,0,2-0.9,2-2V2C19,0.9,18.1,0,17,0L17,0z"/>
+<path class="st1" d="M16,5.6c-0.1-0.5-0.3-0.9-0.7-1.2c-0.8-0.6-2-0.5-2.6,0.4l-4.2,5.6L6.2,8.2c-0.7-0.7-1.9-0.7-2.7,0
+	C3.2,8.6,3,9,3,9.5s0.2,1,0.6,1.3l3.7,3.6C7.6,14.8,8.1,15,8.6,15l0.1,0c0.5,0,1-0.3,1.4-0.7L15.6,7C15.9,6.6,16.1,6.1,16,5.6z"/>
+</svg>
+
+/**********************************
+Video Element
+***********************************/
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #384047;
+}
+
+.wrapper {
+  max-width: 90%;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+
+h1, h2 {
+  margin: 30px 0;
+  text-align: center;
+}
+
+video, audio, .mejs-treehouse {
+  margin: 0 auto;
+  display: block;
+}
