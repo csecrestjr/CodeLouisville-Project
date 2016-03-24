@@ -1,242 +1,243 @@
 <HTML>
     <!-- DW6 -->
     <HEAD>
-        <META charset="utf-8">
-        <META name="keywords" content="University of Louisville,Department of
-        Physics and Astronomy,physics,louisville,research,computational physics,
-        high energy,hep,high energy physics,atlas,babar,particle,particle physics">
-        <link rel="icon" href="/images/favicon.ico" type="image/png" />
-        <TITLE>High Energy Physics - University of Louisville: Department of Physics and Astronomy</TITLE>
-        <LINK rel="stylesheet" href="../css/hep_css.css" type="text/css">
-        <LINK rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
-          crossorigin="anonymous">
-        <LINK rel="stylesheet" href="../css/hep_css.css" type="text/css">
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
-          integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-          crossorigin="anonymous"></script>
-          <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-          <script src="../vendor/angular.js" type="/text/javascript"></script>
+      <META charset="utf-8">
+      <META name="keywords" content="University of Louisville,Department of
+      Physics and Astronomy,physics,louisville,research,computational physics,
+      high energy,hep,high energy physics,atlas,babar,particle,particle physics">
+      <link rel="icon" href="/images/favicon.ico" type="image/png" />
+      <TITLE>High Energy Physics - University of Louisville: Department of Physics and Astronomy</TITLE>
+      <LINK rel="stylesheet" href="../css/hep_css.css" type="text/css" href="css/custom-popup.css"
+      href="css/responsive.css" href="css/magnific-popup.css">
+      <LINK rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+      <LINK rel="stylesheet" href="../css/hep_css.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+        <script src="../vendor/angular.js" type="../text/javascript"></script>
     </HEAD>
     <BODY>
 
     <style>
-          /* Style for the dropdown menu */
-          .menu {
-              padding: 0;
-              margin: 0;
-              /* background: #7f0000; */
-              background: transparent;
-          }
+               /* Style for the dropdown menu */
+               .menu {
+                   padding: 0;
+                   margin: 0;
+                   /* background: #7f0000; */
+                   background: transparent;
+               }
 
-          .menuItem {
-              display: inline;
-              position: relative;
-          }
+               .menuItem {
+                   display: inline;
+                   position: relative;
+               }
 
-          .submenu {
-              position: absolute;
-              left: -1px;
-              top: -1px;
-              display: none;
-              padding-bottom: 3px;
-          }
+               .submenu {
+                   position: absolute;
+                   left: -1px;
+                   top: -1px;
+                   display: none;
+                   padding-bottom: 3px;
+               }
 
-          .menuItem:hover .submenu {
-              background: #7f0000;
-              border-width: 1px;
-              border-color: #932525;
-              border-style: solid;
-              display: block;
-              box-shadow: 1px 1px 2px #111111;
-          }
-      </style>
-      <div id="masthead">
-          <a href="https://louisville.edu/"><img src="../images/UL_logo_white.png" alt="University of Louisville" style="float:right;width:150px;padding:5px 15px;"></a>
-          <img src="../images/HEPLogo.png" alt="High Energy Physics" style="padding:8px 10px 0px;">
-          <!-- <H1 id="siteName">High Energy Physics</H1> -->
-          <div id="globalNav">
-              <ul class="menu">
-                  <li class="menuItem"><a href="../index.html">Home            </a> </li> |
-                  <li class="menuItem"><a href="../navigation-BaBar/BaBar.html">BaBar </a> </li> |
-                  <li class="menuItem"><a href="../navigation-mu2e/mu2e.html">Mu2e   </a> </li> |
-                  <li class="menuItem"><a href="../navigation-news/news.html">News Archive</a>
-                  <ul class="menu submenu">
-                      <center>
-                          <li style="padding-bottom:5px;"><a href="../navigation-news/news.html">News Archive      </a> </li>
-                          <li><a href="/news.php?y=2009">2009 </a> </li>
-                          <li><a href="/news.php?y=2010">2010 </a> </li>
-                          <li><a href="/news.php?y=2010">2011 </a> </li>
-                          <li><a href="/news.php?y=2012">2012 </a> </li>
-                          <li><a href="/news.php?y=2010">2014 </a> </li>
-                          <li><a href="/news.php?y=2015">2015 </a> </li>
-                          <li><a href="/news.php?y=2016">2016 </a> </li>
-                  </center></ul>
-                  </li> |
-                  <li class="menuItem"><a href="../navigation-group/group.html">Group Page</a></li> |
-                  <li class="menuItem"><A href="../navigation-alumni/alumni.html">Alumni Page</A></li> |
-                  <li class="menuItem"><A href="../navigation-faqs/faqs.html">FAQs</A></li>
-              </ul>
-              <!--    <A href="http://www.physics.louisville.edu/">UofL Physics Home</A> |-->
-              <!--    <A href="http://www.physics.louisville.edu/content/research.html">UofL Physics Research</A>-->
-          </div>
-          <div id="subMasthead">
-              <h2 id="pageName">Mu2e</h2>
-          </div>
-      </div>
+               .menuItem:hover .submenu {
+                   background: #7f0000;
+                   border-width: 1px;
+                   border-color: #932525;
+                   border-style: solid;
+                   display: block;
+                   box-shadow: 1px 1px 2px #111111;
+               }
+           </style>
 
-        <div id="headlines">
-          <h3 style="font-size:120%;">Who We Are</h3>
-          <br>
-          <h5 style="padding-top:10px;">Faculty</h5>
-          <br>
-          <div style="font-size:90%;padding-bottom:10px;">
-              <h4>Dr. Swagato Banerjee</h4>
-              Natural Sciences Bldg. 210<br>
-              Office: (502) 852-0915<br>
-              Email: <script type="text/javascript" charset="utf-8">
-              document.write("swag"+"ato"+".ban"+"erjee"+"@"+"louisville.edu");
-          </script>swagato.banerjee@louisville.edu<br>
-              <a href="http://www.physics.louisville.edu/contacts/23-assistant-professors/47-sbanerjee">Webpage</a><br>
-              <br>
-              <h4>Dr. David Brown (PI)</h4>
-              Natural Sciences Bldg. 204<br>
-              Office: (502) 852-6790<br>
-              Email: <script type="text/javascript" charset="utf-8">
-              document.write("dav"+"id.br"+"own"+"@"+"louisville.edu");
-          </script>david.brown@louisville.edu<br>
-              <a href="http://www.physics.louisville.edu/dnbrown">Webpage</a><br>
-              <br>
-              <h4>Dr. Chris Davis</h4>
-              Natural Sciences Bldg. 205<br>
-              Office: (502) 852-0852<br>
-              Email: <script type="text/javascript" charset="utf-8">
-              document.write("c."+"l.da"+"vis"+"@"+"louisville.edu");
-          </script>c.l.davis@louisville.edu<br>
-              <a href="http://www.physics.louisville.edu/cldavis/davis.html">Webpage</a><br>
-              <br>
-          </div>
-          <br>
-          <h5>Members</h5>
-          <br>
-          <h4 style="font-size:90%">Graduate Students</h4>
-          <ul style="font-size:90%">
-            <li>Jake Berg     </li>
-            <li>Jake Colston  </li>
-            <li>Bryan Fagan   </li>
-            <li>Erich Hohenstein </li>
-            <li>Richard Judge </li>
-            <li>Michael Martin*</li>
-          </ul>
-          <br>
-          <h4 style="font-size:90%">Undergraduate Students</h4>
-          <ul style="font-size:90%">
-            <li>Joseph Brock   </li>
-            <li>Dustin Cox     </li>
-            <li>Joseph Leibson </li>
-            <li>Brent Mode     </li>
-            <li>Nava Moore     </li>
-            <li>Logan Riney    </li>
-            <li>Calvin Secrest </li>
-          </ul>
-          <br>
-          <div style="font-size:70%;padding-bottom:20px;">
-            Dept. of Physics and Astronomy <br>
-            102 Natural Science Bldg.<br>
-            University of Louisville<br>
-            Louisville KY 40292<br>
-            (502) 852-6790<br>
-          </div>
-        </div>
+           <DIV id="masthead">
+               <a href="https://louisville.edu/"><img src="../images/UL_logo_white.png" alt="University of Louisville" style="float:right;width:150px;padding:5px 15px;"></a>
+               <img src="../images/HEPLogo.png" alt="High Energy Physics" style="padding:8px 10px 0px;">
+               <!-- <H1 id="siteName">High Energy Physics</H1> -->
+               <DIV id="globalNav">
+                   <ul class="menu">
+                       <li class="menuItem"><A href="../index.html">Home            </A> </li> |
+                       <li class="menuItem"><A href="../navigation-BaBar/BaBar.html">BaBar </A> </li> |
+                       <li class="menuItem"><A href="../navigation-mu2e/mu2e.html">Mu2e   </A> </li> |
+                       <li class="menuItem"><A href="../navigation-news/news.html">News Archive</A>
+                       <ul class="menu submenu">
+                           <center>
+                               <li style="padding-bottom:5px;"><A href="../navigation-news/news.html">News Archive      </A> </li>
+                               <li><A href="/news.php?y=2009">2009 </A> </li>
+                               <li><A href="/news.php?y=2010">2010 </A> </li>
+                               <li><A href="/news.php?y=2010">2011 </A> </li>
+                               <li><A href="/news.php?y=2012">2012 </A> </li>
+                               <li><A href="/news.php?y=2010">2014 </A> </li>
+                               <li><A href="/news.php?y=2015">2015 </A> </li>
+                               <li><A href="/news.php?y=2016">2016 </A> </li>
+                       </center></ul>
+                       </li> |
+                       <li class="menuItem"><A href="../navigation-group/group.html">Group Page</A></li> |
+                       <li class="menuItem"><A href="../navigation-alumni/alumni.html">Alumni Page</A></li> |
+                       <li class="menuItem"><A href="../navigation-faqs/faqs.html">FAQs</A></li>
+                   </ul>
+                   <!--    <A href="http://www.physics.louisville.edu/">UofL Physics Home</A> |-->
+                   <!--    <A href="http://www.physics.louisville.edu/content/research.html">UofL Physics Research</A>-->
+               </DIV>
+               <DIV id="subMasthead">
+                   <H2 id="pageName">Mu2e</H2>
+               </DIV>
+           </DIV>
+   <DIV id="headlines">
+     <H3 style="font-size:120%;">Who We Are</H3>
+     <br>
+     <H5 style="padding-top:10px;">Faculty</H5>
+     <br>
+     <DIV style="font-size:90%;padding-bottom:10px;">
+         <H4>Dr. Swagato Banerjee</H4>
+         Natural Sciences Bldg. 210<br>
+         Office: (502) 852-0915<br>
+         Email: <script type="text/javascript" charset="utf-8">
+         document.write("swag"+"ato"+".ban"+"erjee"+"@"+"louisville.edu");
+     </script><br>
+         <a href="http://www.physics.louisville.edu/contacts/23-assistant-professors/47-sbanerjee">Webpage</a><br>
+         <br>
+         <H4>Dr. David Brown (PI)</H4>
+         Natural Sciences Bldg. 204<br>
+         Office: (502) 852-6790<br>
+         Email: <script type="text/javascript" charset="utf-8">
+         document.write("dav"+"id.br"+"own"+"@"+"louisville.edu");
+     </script><br>
+         <a href="http://www.physics.louisville.edu/dnbrown">Webpage</a><br>
+         <br>
+         <H4>Dr. Chris Davis</H4>
+         Natural Sciences Bldg. 205<br>
+         Office: (502) 852-0852<br>
+         Email: <script type="text/javascript" charset="utf-8">
+         document.write("c."+"l.da"+"vis"+"@"+"louisville.edu");
+     </script><br>
+         <a href="http://www.physics.louisville.edu/cldavis/davis.html">Webpage</a><br>
+         <br>
+     </DIV>
+     <br>
+     <H5>Members</H5>
+     <br>
+     <H4 style="font-size:90%">Graduate Students</H4>
+     <UL style="font-size:90%">
+       <LI>Jake Berg     </LI>
+       <LI>Jake Colston  </LI>
+       <LI>Bryan Fagan   </LI>
+       <LI>Erich Hohenstein </LI>
+       <LI>Richard Judge </LI>
+       <LI>Michael Martin*</LI>
+     </UL>
+     <br>
+     <H4 style="font-size:90%">Undergraduate Students</H4>
+     <UL style="font-size:90%">
+       <LI>Joseph Brock   </LI>
+       <LI>Dustin Cox     </LI>
+       <LI>Joseph Leibson </LI>
+       <LI>Brent Mode     </LI>
+       <LI>Nava Moore     </LI>
+       <LI>Logan Riney    </LI>
+       <LI>Calvin Secrest </LI>
+     </UL>
+     <br>
+     <DIV style="font-size:70%;padding-bottom:20px;">
+       Dept. of Physics and Astronomy <br>
+       102 Natural Science Bldg.<br>
+       University of Louisville<br>
+       Louisville KY 40292<br>
+       (502) 852-6790<br>
+     </DIV>
+   </DIV>
+   <DIV id="rightSide">
+       <DIV id="navBar">
+       <DIV class="relatedLinks">
+       	<H3 style="font-size:120%">External Links</H3>
+           <H3>HEP Resources</H3>
+           <UL>
+               <LI><A href="http://www2.slac.stanford.edu/vvc/">SLAC Virtual Visitor Center</A></LI>
+               <LI><A href="http://particleadventure.org/">The Particle Adventure</A></LI>
+               <LI><A href="http://quarknet.fnal.gov/">Quarknet</A></LI>
+           </UL>
+       </DIV>
+       <DIV class="relatedLinks">
+           <H3>Other Resources</H3>
+           <UL>
+               <LI><A href="http://www.physics.louisville.edu/">UofL Physics Home</A></LI>
+               <LI><A href="http://www.physics.louisville.edu/content/research.html">UofL Physics Research</A></LI>
+               <LI><A href="http://louisville.edu/">UofL Home Page</A></LI>
+           </UL>
+       </DIV>
+   </DIV>
+       <DIV class="relatedLinks">
+           <H3>Mu2e Resources</H3>
+           <A href="http://mu2e.fnal.gov/">Fermilab Mu2e Page</A>
+           <A href="http://mu2e.fnal.gov/public/index.shtml">Fermilab "Mu2e for Physicists" Page</A>
+           <A href="http://www.fnal.gov/">Fermilab Home Page</A>
+           <A href="http://mu2e.fnal.gov/research_goals.shtml">Why Mu2e?</A>
+           <A href="http://mu2e.fnal.gov/public/hep/computing/gettingstarted.shtml">Getting Started</A>
+       </DIV>
+   </DIV>
 
-        <div id="rightSide">
-    <div id="navBar">
-    <div class="relatedLinks">
-    	<h3 style="font-size:120%">External Links</h3>
-        <h3>HEP Resources</h3>
-        <ul>
-            <li><a href="http://www2.slac.stanford.edu/vvc/">SLAC Virtual Visitor Center</a></li>
-            <li><a href="http://particleadventure.org/">The Particle Adventure</a></li>
-            <li><a href="http://quarknet.fnal.gov/">Quarknet</a></li>
-        </ul>
-    </div>
-    <div class="relatedLinks">
-        <h3>Other Resources</h3>
-        <ul>
-            <li><a href="http://www.physics.louisville.edu/">UofL Physics Home</a></li>
-            <li><a href="http://www.physics.louisville.edu/content/research.html">UofL Physics Research</a></li>
-            <li><a href="http://louisville.edu/">UofL Home Page</a></li>
-        </ul>
-    </div>
-</div>
-    <div class="relatedLinks">
-        <h3>Mu2e Resources</h3>
-        <a href="http://mu2e.fnal.gov/">Fermilab Mu2e Page</a>
-        <a href="http://mu2e.fnal.gov/public/index.shtml">Fermilab "Mu2e for Physicists" Page</a>
-        <a href="http://www.fnal.gov/">Fermilab Home Page</a>
-        <a href="http://mu2e.fnal.gov/research_goals.shtml">Why Mu2e?</a>
-        <a href="http://mu2e.fnal.gov/public/hep/computing/gettingstarted.shtml">Getting Started</a>
-    </div>
-</div>
-</div>
+   <DIV id="content">
 
+       <DIV class="feature">
+
+           <IMG src="../images/mu2e_logo.jpg" alt="mu2e logo" height="195" width="325">
+
+           <H3 style="font-size:150%;">The Mu2e Project</H3>
+
+           <p>
+           Mu2e is a High Energy Physics experiment currently
+           in development at the Fermi National Accelerator
+           Laboratory (Fermilab), just outside Chicago, Illinois.
+           </p>
+
+           <p>
+           The experiment has a very specific goal in mind,
+           which has governed all of the design considerations:
+           to observe charged lepton flavor violation (CLFV)
+           in direct conversion of a muon to an electron.
+           (Hence, "Mu2e".)
+           </p>
+
+           <p>
+           Lepton flavor violation has been observed in neutrino
+           oscillations, and CLFV is also allowed in the current
+           Standard Model (SM), although it is predicted to be
+           heavily kinematically suppressed.
+           </p>
+
+           <p>
+           However, many theories of physics beyond the SM predict
+           more frequent CLFV, like the direct conversion of a
+           muon to an electron.  At Mu2e's conclusion, we will (hopefully!)
+   	have either a more rigorous limit on CLFV's kinematic
+   	suppression, or a direct observation of CLFV suggesting
+   	physics beyond the Standard Model.
+           </p>
+
+       </DIV>
+
+       <br>
+       <br>
+
+   </DIV>
 <div id="content">
 
-    <div class="feature">
-      <img src="../images/mu2e_logo.jpg" alt="mu2e logo" height="195" width="325">
+<h2>Into the Subatomic Jungle</h2>
 
-      <h3 style="font-size:150%;">The Mu2e Project</h3>
+  <div class="wrapper">
+   <video controls>
+    <source src="https://www.youtube.com/watch?v=up-fbMd_ziU/html-video-and-audio/bridge.mp4" type="video/mp4">
+    <source src="https://www.youtube.com/watch?v=up-fbMd_ziU/html-video-and-audio/bridge.ogg" type="video/ogg">
+   </video>
+</div>
+</div>
 
-        <div class="feature">
-
-        <p>
-        Mu2e is a High Energy Physics experiment currently
-        in development at the Fermi National Accelerator
-        Laboratory (Fermilab), just outside Chicago, Illinois.
-        </p>
-
-        <p>
-        The experiment has a very specific goal in mind,
-        which has governed all of the design considerations:
-        to observe charged lepton flavor violation (CLFV)
-        in direct conversion of a muon to an electron.
-        (Hence, "Mu2e".)
-        </p>
-
-        <p>
-        Lepton flavor violation has been observed in neutrino
-        oscillations, and CLFV is also allowed in the current
-        Standard Model (SM), although it is predicted to be
-        heavily kinematically suppressed.
-        </p>
-
-        <p>
-        However, many theories of physics beyond the SM predict
-        more frequent CLFV, like the direct conversion of a
-        muon to an electron.  At Mu2e's conclusion, we will (hopefully!)
-have either a more rigorous limit on CLFV's kinematic
-suppression, or a direct observation of CLFV suggesting
-physics beyond the Standard Model.
-        </p>
-      </div>
-    </div>
-  </div>
-
-        <h4>Into the Subatomic Jungle</h4>
-
-        <div class="wrapper">
-
-          <h2>Video Example</h2>
-
-          <video controls>
-            <source src="https://www.youtube.com/watch?v=up-fbMd_ziU/html-video-and-audio/bridge.mp4" type="video/mp4">
-            <source src="https://www.youtube.com/watch?v=up-fbMd_ziU/html-video-and-audio/bridge.ogg" type="video/ogg">
-          </video>
-
-        </div>
   <!--end content -->
-  <H4 style="padding-top:50px"></H4>
+  <H3 style="padding-top:50px"></H3>
       <DIV id="siteInfo">
           <A href="http://www.louisville.edu/"><IMG src="../images/ULlogo.png" width="44" height="28"></A>
           <A href="http://www.facebook.com"><IMG alt="Facebook icon" src="../UofLSPS/bloginner/connect-social-media/facebook_icon-87b05728d04840fc7ce6f5ffc4003bc7.svg"></A>
