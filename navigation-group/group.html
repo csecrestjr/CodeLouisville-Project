@@ -13,13 +13,13 @@
         <LINK rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
             integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
             crossorigin="anonymous">
-        <LINK rel="stylesheet" href="../css/hep_css.css" type="text/css">
+        <LINK rel="stylesheet" href="../css/hep_css.css" type="text/css" href="../css/main.css">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
             integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
             crossorigin="anonymous"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-            <script src="../vendor/angular.js" type="text/javascript"></script>
+
     </HEAD>
     <BODY>
 
@@ -210,8 +210,8 @@
 
 <section ng-app="todoListApp">
         <h2 ng-click="WelcomeBack()">My To-do's</h2>
-        <h4 style="padding-right=150px"></h4>
         <div ng-controller="mainCtrl" class="list">
+          <div ng-repeat="todo in todos">
           <div class="add">
             <a href=""ng-click="addTodo()">+ Add a New Task</a>
           </div>
@@ -224,7 +224,6 @@
               <a href="" ng-click=" editing = !editing">Edit</a>
               <a href="" ng-click="saveTodo(todo)">Save</a>
               <a href="" ng-click="deleteTodo(todo, $index)"  class="Delete">delete</a>
-            <h3 style="padding-top:150px"></h3>
             </div>
            </div>
           <div class="item" ng-class="{'editing-item': editing, 'edited': todo.edited}" ng-repeat="todo in todos">
@@ -236,23 +235,17 @@
               <a href="" ng-click=" editing = !editing">Edit</a>
               <a href="" ng-click="saveTodo(todo)">Save</a>
               <a href="" ng-click="deleteTodo(todo, $index)"  class="Delete">delete</a>
-           <h3 style="padding-bottom:150px"></h3>
         </div>
-        <script src="../vendor/angular.js" type="text/javascript"></script>
-        <script src="../navigation-todo/app.js" type="text/javascript"></script>
-        <script src="../navigation-todo/main.js" type="text/javascript"></script>
-        <script src="../navigation/main.js/data.js" type="text/javascript"></script>
-        <script src="../navigation-todo/main.js/todos.js" type="text/javascript"></script>
-        <H4 style="padding-bottom:150px"></H4>
+        <script src="../js/main.js" type="text/javascript"></script>
 </section>
+<H4 style="padding-bottom:450px"></H4>
 </DIV>
 </DIV>
 <!--end content -->
-<H3 style="padding-bottom:150px"></H3>
     <DIV id="siteInfo">
         <A href="http://www.louisville.edu/"><IMG src="../images/ULlogo.png" width="44" height="28"></A>
-        <A href="http://www.facebook.com"><IMG alt="Facebook icon" src="../UofLSPS/bloginner/connect-social-media/facebook_icon-87b05728d04840fc7ce6f5ffc4003bc7.svg"></A>
-        <A href="http://www.youtube.com"><IMG alt="Youtube icon" src="../channel/UCUxeusiUvOy-CUxbpRECVlg/bloginner/connect-social-media/youtube_icon-0ba2e2c484c476c73e159f1e5f92d4f0.svg"></A>
+        <A href="http://www.facebook.com"><IMG alt="Facebook icon" src="../images/facebook_icon-87b05728d04840fc7ce6f5ffc4003bc7.svg"></A>
+        <A href="http://www.youtube.com"><IMG alt="Youtube icon" src="../images/youtube_icon-0ba2e2c484c476c73e159f1e5f92d4f0.svg"></A>
         <A href="/sitemap.php">Site Map</A> |
         <script type="text/javascript" charset="utf-8">
             document.write("<A href=\"mailto:"+"dav"+"id.br"+"own"+"@"+"louisville.edu"+"\">Contact Us</A>");
