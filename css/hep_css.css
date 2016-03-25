@@ -458,8 +458,8 @@ html>body #navBar li  {border-bottom: none;}
 /************** Media Queries **************/
 /* For mobile phones: */
 
-link {
-    <
+link h4{
+
 }
 [class*="col-"] {
     width: 100%;
